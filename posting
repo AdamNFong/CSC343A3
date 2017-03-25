@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no" ?>
+<postings>
+	<posting pID="P1">
+		<position>Stats Intern</position>
+		<reqskill what="SQL" level="3"/>
+		<reqskill what="R" level="3"/>
+		<questions>
+			<question qID="Q1">
+				What is SQL?
+			</question>
+			<question qID="Q2">
+				What is R?
+			</question>
+		</questions>
+	</posting>
+
+	<position>Software Dev Intern</position>
+		<reqskill what="Python" level="4"/>
+		<reqskill what="LaTeX" level="4"/>
+		<questions>
+			<question qID="Q3">
+				What is Python?
+			</question>
+			<question qID="Q4">
+				What is LaTeX?
+			</question>
+		</questions>
+	</posting>
+
+</postings>
