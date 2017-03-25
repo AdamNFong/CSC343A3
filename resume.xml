@@ -13,6 +13,100 @@
 			</name>
 			<DOB>22-22-2222</DOB>
 			<citizenship> Canadian </citizenship>
+			<address>29 summerlea street</address>
+			<telephone>123-123-1234</telephone>
+			<email> example@example.com</email>
 		</identification>
+		<education>
+			<degree level="undergraduate">
+				<degreename>Bachelor of Science</degreename>
+				<institution>University of Toronto St.George</institution>
+				<major>Computer Science</major>
+				<major>Mathematics</major>
+				<honours/>
+				<period>
+					<startDate>sept 2014</startDate>
+					<endDate>may 2018</endDate>
+				</period>
+			</degree>
+		</education>
+		<skills>
+			<skill what="Python" level="4"/>
+			<skill what="SQL" level="3"/>
+		</skills>
+	</resume>
+	
+	<resume rID="R2">
+		<identification>
+			<name>
+				<forename>Stephen</forename>
+				<lsurname>Yee</surname>
+				<honrific>Doctor</honrific>
+			</name>
+			<DOB> 11-11-1111</DOB>
+			<citizenship>Canadian</citizenship>
+			<address>123 example street </address>
+			<telephone>456-456-4567</telephone>
+			<email>1234@example.com</email>
+		</identification>
+		<experience>
+			<position where="NASA">
+				<title> Janitor </title>
+				<description>Sanitations Engineer</description>
+				<period>
+					<startDate>may 2010</startDate>
+					<endDate>may 2011</endDate>
+				</period>
+			</position>
+		</experience>
+		<skills>
+			<skill what="R" level="5"/>
+			<skill what="Scheme" level="1"/>
+		</skills>
+	</resume>
+
+	<resume rID="R3">
+		<summary>
+			EXAMPLE EXAMPLE EXAMPLE
+		</summary>
+		<identification>
+			<name>
+				<forename>Bruce</forename>
+				<surname>Wayne</surname>
+				<honorific>Doctor</honorific>
+			</name>
+			<DOB>22-22-4235</DOB>
+			<citizenship>US</citizenship>
+			<address>29 Gotham street</address>
+			<telephone>123-123-7869</telephone>
+			<email> example@Gotham.com</email>
+		</identification>
+		<education>
+			<degree level="doctoral">
+				<degreename>Bachelor of Science</degreename>
+				<institution>University of Toronto St.George</institution>
+				<major>Computer Science</major>
+				<major>Mathematics</major>
+				<honours/>
+				<period>
+					<startDate>sept 2014</startDate>
+					<endDate>may 2018</endDate>
+				</period>
+			</degree>
+		</education>
+		<experience>
+			<position where="NASA">
+				<title> Intern </title>
+				<description>Chemical Engineer</description>
+				<period>
+					<startDate>may 2016</startDate>
+					<endDate>may 2017</endDate>
+				</period>
+			</position>
+		</experience>
+		<skills>
+			<skill what="Python" level="5"/>
+			<skill what="LaTeX" level="5"/>
+		</skills>
 	</resume>
 </resumes>
