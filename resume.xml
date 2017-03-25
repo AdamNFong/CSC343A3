@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE resumes SYSTEM "resume.dtd">
+<resumes>
+	<resume rID="R1">
+		<summary>
+			TONS OF EXPERIENCE LIKES LOADS OF IT
+		</summary>
+		<identification>
+			<name>
+				<forename> Adam </forename>
+				<surname> Fong </surname>
+				<honorific> Mr Doctor Professor</honorific>
+			</name>
+			<DOB>22-22-2222</DOB>
+			<citizenship> Canadian </citizenship>
+		</identification>
+	</resume>
+</resumes>
