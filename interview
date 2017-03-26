@@ -1,6 +1,43 @@
 <?xml version="1.0" standalone="no" ?>
 <interviews>
-	<interview rID="R1" pID="P1" sID="S1">
 
+	<interviewer sID="S1">
+		<forename>Some</forename>
+		<surname>guy</surname>
+		<honorific>Dr</honorific>
+		<title>kek</title>
+	</interviewer>
+
+	<interview rID="R1" pID="P1" sID="S1">
+		<date>12-12-1222</date>
+		<time>12:12</time>
+		<location>Somewhere</location>
+		<assessment>
+			<answers>
+				<answer answer="Q1">idk lol</answer>
+				<answer answer="Q2">whatlol</answer>
+			</answers> 
+			<techProficiency>WOWSOBAD</techProficiency>
+			<communication>terrible</communication>
+			<enthusiasm>bored</enthusiasm>
+			<collegiality>...</collegiality>
+		</assessment>
 	</interview>
+
+	<interview rID="R2" pID="P2" sID="S1">
+		<date>12-12-1222</date>
+		<time>12:12</time>
+		<location>Engineering Building</location>
+		<assessment>
+			<answers>
+				<answer answer="Q3">kek</answer>
+				<answer answer="Q4">lol</answer>
+			</answers> 
+			<techProficiency>WOWSOGOOD</techProficiency>
+			<communication>EXCELLENT</communication>
+			<enthusiasm>SOHAPPY</enthusiasm>
+			<collegiality>...</collegiality>
+		</assessment>
+	</interview>
+
 </interviews>
