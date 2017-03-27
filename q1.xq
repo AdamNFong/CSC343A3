@@ -13,7 +13,7 @@
 		(let $d := fn:doc("q1.xml")
 		let $Postings := $d//posting
 		for $post in $SQLPostings
-		where $post/@what ="SQL"
+		where $post/reqSkill/@what ="SQL"
 		return $d//posting)
 
 		intersect
