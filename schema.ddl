@@ -113,17 +113,29 @@ CREATE TABLE Degree (
 	degreeLevel DegLevel NOT NULL,
 	degreeName varchar(30),
 	institution carchar(30),
-	major major_id REFERENCES Major NOT NULL,
-	minor minor_id REFERENCES Minor,
+	set_major_id integer REFERENCES SetMajor NOT NULL,
+	set_minor_id integer REFERENCES SetMinor,
 	honours boolean DEFAULT false,
 	period_id integer REFERENCES Period,
-	PRIMARY (degree_id)
+	PRIMARY (degree_id, major)
 ) ;
+
+CREATE TABLE SetMajor(
+	set_major integer NOT NULL,
+	major_id integer REFERENCES Major NOT NULL,
+	PRIMARY (set_major, major_id)
+);
 
 CREATE TABLE Major (
 	major_id integer NOT NULL,
 	major varchar(20) NOT NULL,
 	PRIMARY (major_id, major)
+) ;
+
+CREATE TABLE Minor(
+	set_minor_id integer NOT NULL,
+	minor_id integer REFERENCES Minor NOT NULL,
+	PRIMARY (set_minor_id, minor_id)
 ) ;
 
 CREATE TABLE Minor (
@@ -153,9 +165,9 @@ CREATE TABLE Position (
 
 CREATE TABLE SetResumeSkill(
 	set_resume_skills_id integer NOT NULL,
-	skill_id integer NOT NULL,
+	skill_id integer REFERENCES Skill NOT NULL,
 	skill_level Numbers NOT NULL
-	PRIMARY (skill_id, what)
+	PRIMARY (set_resume_skills_id, skill_id)
 ) ;
 
 CREATE TABLE Skill(
