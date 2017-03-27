@@ -16,7 +16,7 @@ CREAT TABLE Interviews(
 
 CREATE TABLE Interview (
 	interview_id integer PRIMARY KEY NOT NULL,
-	date timestamp NOT NULL,
+	InterviewDate timestamp NOT NULL,
 	location varchar(40) NOT NULL,
 	assessment_id integer REFERENCES Assessment NOT NULL
 ) ;
@@ -58,7 +58,7 @@ CREATE TABLE Posting (
 	posting_id integer NOT NULL,
 	set_skills_id integer REFERENCES SetRequiredSkills NOT NULL,
 	Set_Questions_id integer REFERENCES SetQuestion,
-	PRIMARY (posting_id, set_skills_id)
+	PRIMARY (posting_id)
 ) ;
 
 CREATE TABLE SetRequiredSkills(
