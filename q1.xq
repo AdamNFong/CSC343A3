@@ -6,3 +6,21 @@
 		$SQLPostings intersect Level5Postings
 	}
 </dbjobs>
+
+
+<dbjobs>
+	{
+		(let $d := fn:doc("q1.xml")
+		let $Postings := $d//posting
+		for $post in $SQLPostings
+		where $post/@what ="SQL"
+		return $d//posting)
+
+		intersect
+
+		(let $Postings := $d//posting
+		for $post in $SQLPostings
+		where $post/reqSkill/@levels ="SQL"
+		return $d//posting)
+	}
+</dbjobs>
