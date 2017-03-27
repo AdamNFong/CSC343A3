@@ -1,0 +1,1 @@
+let $d := fn:doc("q2.xml")
