@@ -115,15 +115,29 @@ CREATE TABLE SetRequiredSkills(
 
 
 --interview--
+
+CREATE TABLE Interview (
+	interview_id integer PRIMARY KEY NOT NULL,
+	InterviewDate timestamp NOT NULL,
+	location varchar(40) NOT NULL
+) ; 
+
 CREATE TABLE Interviewer (
 	interview_id integer PRIMARY KEY REFERENCES Interview(interview_id) NOT NULL,
 	forename varchar(20) NOT NULL,
 	surname varchar(20) NOT NULL,
 	honorific varchar(20) NOT NULL,
-	title varchar(20) NOT NULL,
-	PRIMARY KEY(interviwer_id) 
+	title varchar(20) NOT NULL
 ) ;
 
+CREATE TABLE Assessment(
+	interview_id integer PRIMARY KEY REFERENCES Interview(interview_id) NOT NULL,
+	Assessment_id integer UNIQUE NOT NULL,
+	techProficiency integer NOT NULL,
+	communication integer NOT NULL,
+	enthusiasm integer NOT NULL,
+	collegiality integer
+);
 
 CREATE TABLE Answer (
 	question_id integer REFERENCES Question NOT NULL,
@@ -132,29 +146,12 @@ CREATE TABLE Answer (
 ) ;
 
 CREATE TABLE Answers (
-	answers_id integer NOT NULL,
+	assessment_id integer REFERENCES Assessment NOT NULL,
 	question_id integer REFERENCES Answer NOT NULL,
 	PRIMARY KEY(answers_id,question_id)
 ) ;
 
 
-CREATE TABLE Assessment(
-	interview_id integer PRIMARY KEY REFERENCES Interview(interview_id) NOT NULL,
-	answers_id integer REFERENCES Answers,
-	techProficiency integer NOT NULL,
-	communication integer NOT NULL,
-	enthusiasm integer NOT NULL,
-	collegiality integer,
-	PRIMARY KEY(interview_id, answers_id)
-);
-
-
-CREATE TABLE Interview (
-	interview_id integer PRIMARY KEY NOT NULL,
-	InterviewDate timestamp NOT NULL,
-	location varchar(40) NOT NULL,
-	assessment_id integer REFERENCES Assessment NOT NULL
-) ;
 
 --CREATE TABLE Interviews(
 --	interview_id integer PRIMARY KEY REFERENCES Interview NOT NULL,
