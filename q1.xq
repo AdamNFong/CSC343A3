@@ -8,7 +8,7 @@
 </dbjobs>
 
 
-<dbjobs>
+(:<dbjobs>
 	{
 		(let $d := fn:doc("posting.xml")
 		let $Postings := $d//posting
@@ -23,4 +23,4 @@
 		where $post/reqSkill/@levels ="SQL"
 		return $d//posting)
 	}
-</dbjobs>
+</dbjobs>:)

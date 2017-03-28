@@ -1,6 +1,9 @@
-let $d := fn:doc("resume.xml")//candidate
-return 123
+<qualified>{
+	let $d := fn:doc("resume.xml")//candidate
+	let $RelevantCondidates := $d//candidate[@numskill > 3]
 
-for $resume in $d
-where @resume/numskill >3
-return 123
+	for $candidate in $RelevantCandidates
+	where $d//candidate[@numskills > 3]
+	return ($d//candidate/@rID | $d//candidate/name | $d//candidate/@numskills | $d//candidate/citizenzhip)
+	}
+</qualified>
