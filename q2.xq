@@ -1,7 +1,9 @@
 <important>{
-let $Reqs:= fn:doc("posting.xml")//posting/reqSkill/(@level * @importance)
-let $max := max ($Reqs)
+let $max := max (let $postings := fn:doc("posting.xml")//posting
+				return $postings/reqSkill/ (@level*@importance))
 
-fn:doc("posting.xml")//posting[reqSkill/(@level* @importance) = $max]
+for $posting in fn:doc("posting.xml")//posting
+where $posting/reqSkill/(@level*@importance) = $max
+return $posting
 }
 </important>
