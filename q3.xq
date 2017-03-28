@@ -1,7 +1,7 @@
 <qualified>{
 let $path := fn:doc("resume.xml")
-let $allSkills := $path//resume/skills
-for $resume in $path//resume
+let $allResumes := $path//resume
+for $resume in $allResumes
 where $resume/skills/count(skill)>3
 return 
 	<candidate
