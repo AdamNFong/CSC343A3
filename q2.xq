@@ -1,8 +1,7 @@
-<important>
-let $d := fn:doc("posting.xml")
-let $Reqs:= $d//posting/reqSkill/(@level * @importance)
+<important>{
+let $Reqs:= fn:doc("posting.xml")//posting/reqSkill/(@level * @importance)
 let $max := max ($Reqs)
 
-$d//posting[reqSkill/(@level* @importance) = $max]
-
+fn:doc("posting.xml")//posting[reqSkill/(@level* @importance) = $max]
+}
 </important>
