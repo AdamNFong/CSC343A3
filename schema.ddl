@@ -148,10 +148,8 @@ CREATE TABLE Answer (
 CREATE TABLE Answers (
 	assessment_id integer REFERENCES Assessment NOT NULL,
 	question_id integer REFERENCES Answer NOT NULL,
-	PRIMARY KEY(answers_id,question_id)
+	PRIMARY KEY(assessment_id,question_id)
 ) ;
-
-
 
 --CREATE TABLE Interviews(
 --	interview_id integer PRIMARY KEY REFERENCES Interview NOT NULL,
