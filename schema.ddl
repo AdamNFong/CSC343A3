@@ -130,6 +130,14 @@ CREATE TABLE Interviewer (
 	title varchar(20) NOT NULL
 ) ;
 
+CREATE TABLE Assessment(
+	interview_id integer PRIMARY KEY REFERENCES Interview(interview_id) NOT NULL,
+	Assessment_id integer UNIQUE NOT NULL,
+	techProficiency integer NOT NULL,
+	communication integer NOT NULL,
+	enthusiasm integer NOT NULL,
+	collegiality integer
+);
 
 CREATE TABLE Answer (
 	question_id integer REFERENCES Question NOT NULL,
@@ -138,21 +146,10 @@ CREATE TABLE Answer (
 ) ;
 
 CREATE TABLE Answers (
-	answers_id integer NOT NULL,
+	assessment_id integer REFERENCES Assessment NOT NULL,
 	question_id integer REFERENCES Answer NOT NULL,
 	PRIMARY KEY(answers_id,question_id)
 ) ;
-
-
-CREATE TABLE Assessment(
-	interview_id integer PRIMARY KEY REFERENCES Interview(interview_id) NOT NULL,
-	answers_id integer REFERENCES Answers(answers_id),
-	techProficiency integer NOT NULL,
-	communication integer NOT NULL,
-	enthusiasm integer NOT NULL,
-	collegiality integer
-);
-
 
 --CREATE TABLE Interviews(
 --	interview_id integer PRIMARY KEY REFERENCES Interview NOT NULL,
