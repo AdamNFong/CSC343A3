@@ -1,9 +1,16 @@
 <qualified>{
-	let $d := fn:doc("resume.xml")//candidate
-	let $RelevantCondidates := $d//candidate[@numskill > 3]
-
-	for $candidate in $RelevantCandidates
-	where $d//candidate[@numskills > 3]
-	return ($d//candidate/@rID | $d//candidate/name | $d//candidate/@numskills | $d//candidate/citizenzhip)
-	}
+let $path := fn:doc("resume.xml")
+let $allSkills := $path//resume/skills
+for $resume in $path//resume
+where $resume/skills/count(skill)>3
+return 
+	<candidate
+		rID = '{data($resume/@rID)}'
+		numSkills = '{data($resume/skills/count(skill))}'
+		citizenship = '{data($resume/identification/citizenship)}'>
+		<name>
+			{data($resume/identification/name/forename)}
+		</name>
+	</candidate>
+}
 </qualified>
