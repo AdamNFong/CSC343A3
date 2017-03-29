@@ -18,10 +18,9 @@
 				<answer answer="Q1">idk lol</answer>
 				<answer answer="Q2">whatlol</answer>
 			</answers> 
-			<techProficiency>WOWSOBAD</techProficiency>
-			<communication>terrible</communication>
-			<enthusiasm>bored</enthusiasm>
-			<collegiality>...</collegiality>
+			<techProficiency>10</techProficiency>
+			<communication>30</communication>
+			<enthusiasm>40</enthusiasm>
 		</assessment>
 	</interview>
 
@@ -34,10 +33,10 @@
 				<answer answer="Q3">kek</answer>
 				<answer answer="Q4">lol</answer>
 			</answers> 
-			<techProficiency>WOWSOGOOD</techProficiency>
-			<communication>EXCELLENT</communication>
-			<enthusiasm>SOHAPPY</enthusiasm>
-			<collegiality>...</collegiality>
+			<techProficiency>100</techProficiency>
+			<communication>90</communication>
+			<enthusiasm>90</enthusiasm>
+			<collegiality>100</collegiality>
 		</assessment>
 	</interview>
 
