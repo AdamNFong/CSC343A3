@@ -1,14 +1,12 @@
-(:for $skill in fn:doc("interview.xml")//assessment
-return $allskills:)
-
-
 let $docInterview := fn:doc("interview.xml")
 let $docResume := fn:doc("resume.xml")
 
 let $interviews := $docInterview//interview 
 let $resumes := $docResume//resume
 
-for $skill in $interviews/assessment
+for $interview in $interviews
+
+let $skill := $interview/assessment
 
 let $tech := $skill/techProficiency
 let $communication := $skill/communication
@@ -18,9 +16,19 @@ let $allskills := ($tech | $enthusiasm | $communication | $collegiality)
 
 let $max := max ($allskills)
 
-for $maxSkill in $allskills
-where $maxSkill = $max
+let $maxSkill := (for $assess in $allskills
+					where $assess = $max
+					return $assess)
 
+let $rID := $interview/@rID
+let $forename := (for $resume in $resumes
+					where $resume/@rID=$rID
+					return  $resume/identification/name/forename)
 
-return $maxSkill
+return 
+	<best resume = '{data($forename)}'
+			position ='{data($interview/@pID)}'>{
+		$maxSkill
+	}
+	</best>
 	
