@@ -1,3 +1,4 @@
+<bestskills>{
 let $docInterview := fn:doc("interview.xml")
 let $docResume := fn:doc("resume.xml")
 
@@ -31,4 +32,6 @@ return
 		$maxSkill
 	}
 	</best>
+	}
+</bestskills>
 	
