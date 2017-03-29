@@ -1,9 +1,10 @@
 <?xml version="1.0" standalone="no" ?>
+<!DOCTYPE resumes SYSTEM "posting.dtd">
 <postings>
 	<posting pID="P1">
 		<position>Stats Intern</position>
-		<reqskill what="SQL" level="5"/>
-		<reqskill what="R" level="3"/>
+		<reqSkill what="SQL" level="5" importance="5"/>
+		<reqSkill what="R" level="3" importance="5"/>
 		<questions>
 			<question qID="Q1">
 				What is SQL?
@@ -16,8 +17,8 @@
 
 	<posting pID="P2">
 		<position>Software Dev Intern</position>
-		<reqskill what="Python" level="4"/>
-		<reqskill what="LaTeX" level="4"/>
+		<reqSkill what="SQL" level="4" importance="5"/>
+		<reqSkill what="LaTeX" level="4" importance="2"/>
 		<questions>
 			<question qID="Q3">
 				What is Python?
@@ -30,8 +31,8 @@
 
 	<posting pID="P3">
 		<position>DB Intern</position>
-		<reqskill what="SQL" level="5"/>
-		<reqskill what="LaTeX" level="4"/>
+		<reqSkill what="SQL" level="5" importance="5"/>
+		<reqSkill what="LaTeX" level="4" importance="3"/>
 		<questions>
 			<question qID="Q3">
 				What is Python?

@@ -7,12 +7,12 @@
 		</summary>
 		<identification>
 			<name>
-				<forename> Adam </forename>
-				<surname> Fong </surname>
+				<forename>Adam</forename>
+				<surname>Fong</surname>
 				<honorific> Mr Doctor Professor</honorific>
 			</name>
 			<DOB>22-22-2222</DOB>
-			<citizenship> Canadian </citizenship>
+			<citizenship>Canadian</citizenship>
 			<address>29 summerlea street</address>
 			<telephone>123-123-1234</telephone>
 			<email> example@example.com</email>
@@ -40,7 +40,7 @@
 		<identification>
 			<name>
 				<forename>Stephen</forename>
-				<lsurname>Yee</surname>
+				<surname>Yee</surname>
 				<honrific>Doctor</honrific>
 			</name>
 			<DOB> 11-11-1111</DOB>
@@ -107,6 +107,8 @@
 		<skills>
 			<skill what="Python" level="5"/>
 			<skill what="LaTeX" level="5"/>
+			<skill what="R" level="5"/>
+			<skill what="Schema" level="5"/>
 		</skills>
 	</resume>
 </resumes>
