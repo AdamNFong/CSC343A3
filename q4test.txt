@@ -4,6 +4,8 @@
 	</best>
 	<best resume="Stephen" position="P2">
 		<techProficiency>100</techProficiency>
+	</best>
+	<best resume="Stephen" position="P2">
 		<collegiality>100</collegiality>
 	</best>
 </bestskills>

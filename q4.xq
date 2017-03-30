@@ -25,13 +25,16 @@ let $rID := $interview/@rID
 let $forename := (for $resume in $resumes
 					where $resume/@rID=$rID
 					return  $resume/identification/name/forename)
-
+					
+let $best := ( for $ms in $maxSkill
+				return (<best resume = '{data($forename)}'
+						position ='{data($interview/@pID)}'>{
+							$ms
+						}
+						</best>)
+				)
 return 
-	<best resume = '{data($forename)}'
-			position ='{data($interview/@pID)}'>{
-		$maxSkill
-	}
-	</best>
-	}
+	$best
+}
 </bestskills>
 	
