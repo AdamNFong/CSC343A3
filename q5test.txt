@@ -1,0 +1,30 @@
+<histogram>
+	<skill name="SQL">
+		<count level="1" count="0"/>
+		<count level="2" count="0"/>
+		<count level="3" count="1"/>
+		<count level="4" count="0"/>
+		<count level="5" count="1"/>
+	</skill>
+	<skill name="R">
+		<count level="1" count="0"/>
+		<count level="2" count="0"/>
+		<count level="3" count="0"/>
+		<count level="4" count="0"/>
+		<count level="5" count="3"/>
+	</skill>
+	<skill name="LaTeX">
+		<count level="1" count="0"/>
+		<count level="2" count="0"/>
+		<count level="3" count="0"/>
+		<count level="4" count="0"/>
+		<count level="5" count="1"/>
+	</skill>
+	<skill name="Python">
+		<count level="1" count="0"/>
+		<count level="2" count="0"/>
+		<count level="3" count="0"/>
+		<count level="4" count="1"/>
+		<count level="5" count="1"/>
+	</skill>
+</histogram>

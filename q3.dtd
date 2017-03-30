@@ -3,5 +3,5 @@
 <!ELEMENT candidate (name)>
 <!ATTLIST candidate rid CDATA #REQUIRED
                     numskills CDATA #REQUIRED
-                    citizenzhip CDATA #REQUIRED>
+                    citizenship CDATA #REQUIRED>
 <!ELEMENT name (#PCDATA)>
