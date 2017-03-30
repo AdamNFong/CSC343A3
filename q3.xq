@@ -7,7 +7,7 @@ return
 	<candidate
 		rid = '{data($resume/@rID)}'
 		numSkills = '{data($resume/skills/count(skill))}'
-		citizenship = '{data($resume/identification/citizenship)}'>
+		citizenzhip = '{data($resume/identification/citizenship)}'>
 		<name>
 			{data($resume/identification/name/forename)}
 		</name>
