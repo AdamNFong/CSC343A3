@@ -1,0 +1,8 @@
+<qualified>
+	<candidate rid="R1" numSkills="4" citizenship="Canadian">
+		<name>Adam</name>
+	</candidate>
+	<candidate rid="R3" numSkills="5" citizenship="US">
+		<name>Bruce</name>
+	</candidate>
+</qualified>

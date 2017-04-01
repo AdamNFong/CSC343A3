@@ -1,0 +1,11 @@
+<bestskills>
+	<best resume="Adam" position="P1">
+		<enthusiasm>40</enthusiasm>
+	</best>
+	<best resume="Stephen" position="P2">
+		<techProficiency>100</techProficiency>
+	</best>
+	<best resume="Stephen" position="P2">
+		<collegiality>100</collegiality>
+	</best>
+</bestskills>
