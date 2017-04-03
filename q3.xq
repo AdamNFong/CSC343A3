@@ -6,7 +6,7 @@ where $resume/skills/count(skill)>3
 return 
 	<candidate
 		rid = '{data($resume/@rID)}'
-		numSkills = '{data($resume/skills/count(skill))}'
+		numskills = '{data($resume/skills/count(skill))}'
 		citizenzhip = '{data($resume/identification/citizenship)}'>
 		<name>
 			{data($resume/identification/name/forename)}
