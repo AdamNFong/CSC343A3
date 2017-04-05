@@ -1,6 +1,9 @@
+declare variable $dataset0 external;
+declare variable $dataset1 external;
+
 <bestskills>{
-let $docInterview := fn:doc("interview.xml")
-let $docResume := fn:doc("resume.xml")
+let $docInterview := $dataset0
+let $docResume := $dataset1
 
 let $interviews := $docInterview//interview 
 let $resumes := $docResume//resume
@@ -10,6 +13,7 @@ for $interview in $interviews
 let $skill := $interview/assessment
 
 let $tech := $skill/techProficiency
+
 let $communication := $skill/communication
 let $enthusiasm := $skill/enthusiasm
 let $collegiality := $skill/collegiality

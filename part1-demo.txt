@@ -1,0 +1,57 @@
+dbsrv1:~/csc343/fix/CSC343A3% psql csc343h-fongadam
+psql (9.3.16)
+Type "help" for help.
+
+csc343h-fongadam=>
+csc343h-fongadam=> \i schema.ddl
+psql:schema.ddl:1: NOTICE:  drop cascades to 23 other objects
+DETAIL:  drop cascades to type part1.deglevel
+drop cascades to type part1.skillwhat
+drop cascades to type part1.numbers
+drop cascades to table part1.resume
+drop cascades to table part1.period
+drop cascades to table part1.skill
+drop cascades to table part1.setresumeskill
+drop cascades to table part1."position"
+drop cascades to table part1.setexperience
+drop cascades to table part1.degree
+drop cascades to table part1.minor
+drop cascades to table part1.major
+drop cascades to table part1.education
+drop cascades to table part1.identity
+drop cascades to table part1.posting
+drop cascades to table part1.question
+drop cascades to table part1.setquestions
+drop cascades to table part1.setrequiredskills
+drop cascades to table part1.interview
+drop cascades to table part1.interviewer
+drop cascades to table part1.assessment
+drop cascades to table part1.answer
+drop cascades to table part1.answers
+DROP SCHEMA
+CREATE SCHEMA
+SET
+CREATE TYPE
+CREATE TYPE
+CREATE TYPE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+csc343h-fongadam=> \q
