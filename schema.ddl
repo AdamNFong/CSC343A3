@@ -15,8 +15,8 @@ CREATE TABLE Resume (
 
 CREATE TABLE Period (
 	period_id integer PRIMARY KEY NOT NULL,
-	startDate timestamp NOT NULL,
-	endDate timeStamp NOT NULL
+	startDate date NOT NULL,
+	endDate date NOT NULL
 ) ;
 CREATE TABLE Skill(
 	skill_id integer NOT NULL,
@@ -77,7 +77,7 @@ CREATE TABLE Education (
 CREATE TABLE Identity (
   resume_id integer PRIMARY KEY REFERENCES Resume(resume_id) NOT NULL,
 	name varchar(20) NOT NULL,
-	DOB timestamp NOT NULL,
+	DOB date NOT NULL,
 	citizenship varchar(10) NOT NULL,
 	address varchar(20) NOT NULL,
 	telephone varchar(20) NOT NULL,
