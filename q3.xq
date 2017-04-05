@@ -1,5 +1,6 @@
+declare variable $dataset0 external;
 <qualified>{
-let $path := fn:doc("resume.xml")
+let $path := $dataset0
 let $allResumes := $path//resume
 for $resume in $allResumes
 where $resume/skills/count(skill)>3

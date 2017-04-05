@@ -1,6 +1,8 @@
+declare variable $dataset0 external;
+declare variable $dataset1 external;
 <histogram>{
-let $postingPath := fn:doc("posting.xml")
-let $resumePath := fn:doc("resume.xml")
+let $postingPath := $dataset0
+let $resumePath := $dataset1
 
 let $resumes := $resumePath//resume
 let $postings := $postingPath//posting
