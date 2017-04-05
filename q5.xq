@@ -11,9 +11,8 @@ let $skills := $postings/reqSkill/string(@what)
 for $skill in distinct-values($skills)
 
 let $count := (for $level in 1 to 5
-		let $resumeWithSkill := $resumes/skills/skill[@what = $skill]
-		let $resumeWithLevel := $resumes/skills/skill[@level = $level]
-		let $levelCount := count(($resumeWithSkill) intersect ($resumeWithLevel))
+		let $resumeWithSkill := $resumes/skills/skill[@what = $skill and @level = $level]
+		let $levelCount := count($resumeWithSkill)
 		return (<count level = '{data($level)}' n='{data($levelCount)}'> </count>))
 return
 	<skill name = '{data($skill)}'>{ 

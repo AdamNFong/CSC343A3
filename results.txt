@@ -16,18 +16,6 @@ Running Assignment 3 XPath/XQuery Solutions
 				What is R?
 			</question>
 		</questions>
-	</posting><posting pID="P2">
-		<position>Software Dev Intern</position>
-		<reqSkill what="SQL" level="4" importance="5"/>
-		<reqSkill what="LaTeX" level="5" importance="5"/>
-		<questions>
-			<question qID="Q3">
-				What is Python?
-			</question>
-			<question qID="Q4">
-				What is LaTeX?
-			</question>
-		</questions>
 	</posting><posting pID="P3">
 		<position>DB Intern</position>
 		<reqSkill what="SQL" level="5" importance="5"/>
@@ -56,19 +44,6 @@ Running Assignment 3 XPath/XQuery Solutions
 			</question>
       <question qID="Q2">
 				What is R?
-			</question>
-    </questions>
-  </posting>
-  <posting pID="P2">
-    <position>Software Dev Intern</position>
-    <reqSkill what="SQL" level="4" importance="5"/>
-    <reqSkill what="LaTeX" level="5" importance="5"/>
-    <questions>
-      <question qID="Q3">
-				What is Python?
-			</question>
-      <question qID="Q4">
-				What is LaTeX?
 			</question>
     </questions>
   </posting>
